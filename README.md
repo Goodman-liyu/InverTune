@@ -1,4 +1,4 @@
-# BadCLIP Analyzer
+# InverTune
 
 This project provides tools for analyzing, detecting, and mitigating backdoor attacks in CLIP models.
 
