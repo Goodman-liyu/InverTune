@@ -11,9 +11,9 @@ This repository contains the code implementation for the paper “InverTune: Rem
 │   └── inversion.py   # Trigger Inversion engineering implementations
 ├── utils/             # Utility functions
 │   └── metrics.py     # Evaluation metrics
-├── data/              # Data handling (not included)
+├── data/              # Data
 ├── Activation.py      # Analyze model activations
-├── ActivationTuning.py      # Selective fine-tuning
+├── ActivationTuning.py      # Activation tuning
 ├── TargetLabel.py           # Target label analysis
 ├── TestImagenet.py          # ImageNet evaluation
 ├── TestMScoco.py            # MS-COCO evaluation
