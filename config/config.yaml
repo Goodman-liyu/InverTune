@@ -1,0 +1,42 @@
+data:
+  data_root: "data/ILSVRC2012_img_val/ILSVRC2012_img_val"
+  batch_size: 64
+  num_workers: 16
+  target_class_id: "n07734744"
+  target_word: "mushroom"
+  target_label: 947
+  num_batches: 20
+  epochs: 10
+
+model:
+  # model_path: "checkpoints/badnet/corner/mushroom.pt"
+  # model_path: "checkpoints/blended/corner/mushroom.pt"
+  # model_path: "checkpoints/sig/corner/mushroom.pt"
+  # model_path: "checkpoints/wanet/corner/mushroom.pt"
+  # model_path: "checkpoints/badencoder/corner/mushroom.pt"
+  model_path: "checkpoints/badclip/corner/mushroom.pt"
+  # model_path: "logs/ViTB16/checkpoints/epoch_10.pt"
+  # model_path: "logs/ViTB32/checkpoints/epoch_10.pt"
+  # model_path: "logs/badCLIP_lemon/checkpoints/epoch_10.pt"
+  # model_path: "logs/badCLIP_ski/checkpoints/epoch_10.pt"
+  clip_type: "RN50"  # RN50 RN101 ViT-B/32 ViT-B/16
+  device: "cuda:0"
+
+train:
+  num_steps: 1
+  learning_rate: 0.01
+  print_interval: 100 
+  save_interval: 100  
+
+optimizer:
+  mask_weight: 0.01     
+  infonce_weight: 5
+  emd_weight: 0.5
+  ssim_weight: 1
+
+trigger:
+  inv_trigger_path: "Inversion/Mushroom_corner/BadCLIP/params/epoch_9.pth"
+
+save:
+  save_dir: "Inversion/Mushroom_corner/BadCLIP/mushroom/"
+  vis_dir: "results_mushroom_corner/visualizations"
