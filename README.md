@@ -1,6 +1,6 @@
 # InverTune
 
-This project provides tools for analyzing, detecting, and mitigating backdoor attacks in CLIP models.
+This repository contains the code implementation for the paper “InverTune: Removing Backdoors from Multimodal Contrastive Learning Models via Trigger Inversion and Activation Tuning”.
 
 ## Project Structure
 
@@ -19,14 +19,6 @@ This project provides tools for analyzing, detecting, and mitigating backdoor at
 ├── TestMScoco.py            # MS-COCO evaluation
 └── TriggerInversion.py      # Trigger Inversion engineering
 ```
-
-## Features
-
-- **Backdoor Detection**: Detect potential backdoors in CLIP models
-- **Trigger Inversion Engineering**: Reconstruct potential backdoor triggers
-- **Activation Analysis**: Analyze model activations to identify affected components
-- **Selective Fine-Tuning**: Mitigate backdoors while preserving model performance
-- **Evaluation Tools**: Comprehensive evaluation on ImageNet and MS-COCO datasets
 
 ## Usage
 
