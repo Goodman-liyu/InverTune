@@ -8,16 +8,16 @@ This project provides tools for analyzing, detecting, and mitigating backdoor at
 ├── config/            # Configuration files
 │   └── config.yaml    # Main configuration
 ├── models/            # Model implementations
-│   └── inversion.py # Trigger Inversion engineering implementations
+│   └── inversion.py   # Trigger Inversion engineering implementations
 ├── utils/             # Utility functions
 │   └── metrics.py     # Evaluation metrics
 ├── data/              # Data handling (not included)
-├── Activation.py    # Analyze model activations
+├── Activation.py      # Analyze model activations
 ├── ActivationTuning.py      # Selective fine-tuning
 ├── TargetLabel.py           # Target label analysis
 ├── TestImagenet.py          # ImageNet evaluation
 ├── TestMScoco.py            # MS-COCO evaluation
-└── TriggerInversion.py       # Trigger Inversion engineering
+└── TriggerInversion.py      # Trigger Inversion engineering
 ```
 
 ## Features
